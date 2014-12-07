@@ -1,0 +1,119 @@
+body{
+	/*background-color: #ff6347;
+	background-image: url(http://www.transparenttextures.com/patterns/polyester-lite.png);*/
+	background-image: url("stripe.png");
+}
+
+#title{
+	color: white;
+	font-family: 'Droid Serif', serif;
+	font-size: 3em;
+	margin:10px;
+/*	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+background-color: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+#subtitle{
+	color: white;
+	font-family: 'Droid Serif', serif;
+	font-size: 0.5em;
+	margin-top: -3px;
+}
+
+#continent1{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:1150px;
+	top: 200px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#continent2{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:1150px;
+	top: 250px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#continent3{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:1150px;
+	top: 300px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#continent4{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:1150px;
+	top: 350px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#continent5{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:1150px;
+	top: 400px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#timeline{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:500px;
+	top: 497px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#map{
+	background-color: tomato;
+	width: 300px;
+	position: absolute;
+	left:20px;
+	top: 96px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+	padding:10px;
+	margin:20px;
+}
+
+#regions_div{
+/*margin-bottom: 1px;*/
+}
+
+#iframe{
+/*	padding-top: 10px;*/
+
+}

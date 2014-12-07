@@ -1,5 +1,7 @@
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["geochart"]});
@@ -8,16 +10,43 @@
       function drawRegionsMap() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700]
+          ['Country', 'Opinion polls for same-sex marriage in % of agreement'],
+          ['Austria', 61],
+          ['Belgium', 67],
+          ['Bulgaria',  15],
+          ['Croatia', 17],
+          ['Cyprus',  39],
+          ['Czech Republic',  45],
+          ['Denmark', 79],
+          ['Estonia', 34],
+          ['Finland', 65],
+          ['France',  68],
+          ['Germany', 74],
+          ['Greece',  39],
+          ['Hungary', 30],
+          ['Ireland', 67],
+          ['Italy', 55],
+          ['Latvia',  12],
+          ['Lithuania', 5],
+          ['Luxembourg',  82],
+          ['Malta', 46],
+          ['Netherlands', 82],
+          ['Norway',  78],
+          ['Poland',  30],
+          ['Portugal',  45.5],
+          ['Romania', 11],
+          ['Slovakia', 19],
+          ['Slovenia',  22],
+          ['Spain', 76],
+          ['Sweden',  81],
+          ['United Kingdom', 68]       
         ]);
 
-        var options = {};
+
+        var options = {
+          region: 150
+
+        };
 
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
@@ -26,11 +55,48 @@
     </script>
   </head>
   <body>
+    <div id="title">LGBT Rights Worldwide
+      <p id="subtitle">Focus: Europe </p> 
+    </div>
 
-    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <div id="regions_div" style="width: 100%; height: 400px; ">
+    </div>
 
-    <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AgUEQo1Iw1vYdEdQeFkzQ0JTbFNvWE9XNUs1Yl9lZmc#gid&font=Pacifico-Arimo&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+    <nav>
+
+      <div id="continent1">
+        Australia
+      </div>
+
+      <div id="continent2">
+        Asia
+      </div>
+
+      <div id="continent3">
+        North America
+      </div>
+
+      <div id="continent4">
+        South America
+      </div>
+
+      <div id="continent5">
+        Africa
+      </div>
+
+    </nav>
+
+    <div id="timeline">
+      Since when is same-sex sexual activity legal?
+    </div>
+
+    <div id="map">
+      Opinion polls for same-sex marriage in % of agreement
+    </div>
     
+    <div id="iframe">
+      <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AgUEQo1Iw1vYdEdQeFkzQ0JTbFNvWE9XNUs1Yl9lZmc&font=DroidSerif-DroidSans&maptype=toner&lang=en&height=300' width='100%' height='300' frameborder='0' marginwidth='5'></iframe>
+    </div> 
 
   </body>
 </html>
